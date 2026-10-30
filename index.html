@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Made in Vietnam — Demo B2B Marketplace</title>
+  <style>
+    :root { --ink:#1a1a2e; --muted:#6b7280; --accent:#2563eb; --bg:#f8fafc; --card:#ffffff; }
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; margin: 0; background: var(--bg); color: var(--ink); line-height: 1.5; }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+    header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); margin: 0 0 .35rem; }
+    header p { color: var(--muted); margin: 0 0 2rem; }
+    .card { background: var(--card); border-radius: 14px; padding: 1.5rem; margin-bottom: 2rem; box-shadow: 0 1px 3px rgba(0,0,0,.06), 0 10px 30px rgba(0,0,0,.04); }
+    .card h2 { margin: 0 0 .35rem; font-size: 1.3rem; }
+    .card .meta { color: var(--muted); font-size: .9rem; margin: 0 0 1rem; }
+    video { width: 100%; height: auto; border-radius: 10px; background: #000; display: block; }
+    ul.flow { padding-left: 1.2rem; margin: .75rem 0 0; color: var(--muted); font-size: .95rem; }
+    ul.flow li { margin: .25rem 0; }
+    footer { color: var(--muted); font-size: .85rem; margin-top: 3rem; text-align: center; }
+    footer code { background: #e5e7eb; padding: .1rem .4rem; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Made in Vietnam — Demo B2B Marketplace</h1>
+      <p>Hai video giới thiệu luồng cốt lõi, tổng ~13 phút. Có voice tiếng Việt.</p>
+    </header>
+
+    <section class="card">
+      <h2>Video 1 — Nhà cung cấp lên sàn</h2>
+      <p class="meta">6:28 · 29.7 MB · 74 bước</p>
+      <video controls preload="metadata">
+        <source src="videos/01-supplier-onboarding-v1b.mp4" type="video/mp4">
+        Trình duyệt không hỗ trợ video.
+      </video>
+      <ul class="flow">
+        <li>Người mua đăng ký → Trở thành nhà cung cấp</li>
+        <li>Khai doanh nghiệp (tên, mã số thuế, địa chỉ, logo, cover)</li>
+        <li>Tải lên 3 giấy tờ KYC bắt buộc (GPKD, GCN thuế, CCCD)</li>
+        <li>Nộp hồ sơ → Quản trị viên phê duyệt</li>
+        <li>Tạo sản phẩm Macbook Mini M5 + bảng giá bán sỉ</li>
+        <li>Gửi duyệt sản phẩm → Admin duyệt → lên sàn công khai</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Video 2 — Người mua gửi yêu cầu & thương lượng</h2>
+      <p class="meta">6:35 · 25.1 MB · 64 bước · tiếp nối Video 1</p>
+      <video controls preload="metadata">
+        <source src="videos/02-buyer-inquiry-chat-v2a.mp4" type="video/mp4">
+        Trình duyệt không hỗ trợ video.
+      </video>
+      <ul class="flow">
+        <li>Người mua đăng ký tài khoản mới (Nguyễn Gia Huy)</li>
+        <li>Tìm Macbook Mini M5 → mở trang chi tiết</li>
+        <li>Gửi yêu cầu báo giá (200 cái, 15 ngày, VAT)</li>
+        <li>Nhà cung cấp báo giá lần 1 (850.000) + chat trao đổi</li>
+        <li>Người mua đề nghị điều chỉnh (đặt định kỳ hàng quý)</li>
+        <li>Nhà cung cấp chỉnh sửa báo giá — gửi lần 2 (800.000, free ship)</li>
+        <li>Người mua chấp nhận → hệ thống ghi nhận cả hai phía</li>
+      </ul>
+    </section>
+
+    <footer>
+      Pipeline: Playwright voice-paced recording + Edge TTS (<code>vi-VN-NamMinhNeural</code>) + ffmpeg mux.<br>
+      Dựng bằng <code>demo-kit</code> · ©DCNET 2026
+    </footer>
+  </div>
+</body>
+</html>
